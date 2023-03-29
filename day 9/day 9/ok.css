@@ -1,6 +1,29 @@
 body{
-    background-color: black;
+    background-color: rgb(175, 46, 46);
 }
 .ok{
     font-family: Arial;
+}
+.ok{
+    font-family: italic;
+    text-transform: uppercase;
+}
+
+#ok{
+
+    text-shadow: 3px 2px 2px rgb(27, 190, 90);
+}
+.okk{
+    text-shadow: 3px 2px 2px white, -3px -2px 2px black;
+}
+.ok1{
+    text-align: center;
+    color: aqua;
+    text-shadow: 3px 2px 2px white;
+    letter-spacing: 10px;
+}
+#copyright{
+
+    text-decoration: line-through;
+    text-shadow: 2px 3px 1px green
 }
