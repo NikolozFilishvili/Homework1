@@ -1,0 +1,63 @@
+body{
+    background-color: rgba(204, 236, 129, 0.253);
+}
+.ok{
+    font-family: Arial;
+}
+.ok{
+    font-family: italic;
+    text-transform: uppercase;
+}
+
+#ok{
+
+    text-shadow: 3px 2px 2px rgb(27, 190, 90);
+}
+.okk{
+    text-shadow: 3px 2px 2px white, -3px -2px 2px black;
+}
+.ok1{
+    text-align: center;
+    color: aqua;
+    text-shadow: 3px 2px 2px white;
+    letter-spacing: 10px;
+}
+#copyright{
+
+    text-decoration: line-through;
+    text-shadow: 2px 3px 1px green
+}
+a{
+    font-family: Arial;
+    color: greenyellow;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 4px 5px 3px green;
+    border: 100px;
+    border-color: aquamarine;
+}
+img{
+    align-content: center;
+    outline: 10px;
+    outline-color: azure;
+    
+}
+.id{
+    text-align: right;
+}
+hr{
+    height: 100px;
+    fill: aquamarine;
+    font-weight: 1000;
+    color: antiquewhite;
+    fill-opacity: calc();
+    column-fill: auto;
+    animation-fill-mode: forwards;
+}
+#as{
+
+line-height: 3;
+text-shadow: 3px 2px 2px greenyellow;
+font-family: impact;
+}

@@ -1,0 +1,26 @@
+name="Nikoloz"
+#name aris cvladi
+# "=" aris cvladistvis mimnijebeli simbolo
+# "Nikoloz" aris cvladistvis mnishvneloba
+
+surname="Filishvili"
+
+#print ფუნქციას გადაეცემა ეკრანზე გამოსატანი ცვლადი ან სტრინგი(ობიექტი)
+
+name="Nikoloz" #ეს არის str(string) ტიპის ცვლადი
+
+age=22 #ეს არის int (integer) მთელი რიცხვი
+
+height=185.5 #ეს არის float ტიპის ცვლადი (ათწილადი)
+
+knows_programming=True #ეს არის booLean(booL)ტიპის ცვლადი
+is_ugly=False #True ან False
+
+name="Nikoloz"
+surname="filishvili"
+
+
+print(name +" "+ surname)
+print(height+ age)
+print(type(age))
+print(type(name))
