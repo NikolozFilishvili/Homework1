@@ -1,0 +1,19 @@
+.div{
+    background-image: url("8d2.jpg");
+    height: 1000px;
+    background-position: center,center;
+    background-color: brown;
+    border: 3px inset red;
+}
+.div h1{
+    text-align:  center;
+    padding-top: 500px;
+}
+/* contain */
+.div2{
+    background-image: url('8d2.jpg');
+    background-color: aliceblue;
+    border: 2px blue dotted;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

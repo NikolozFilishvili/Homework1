@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input and forms -->
+     <form>
+      <input type="text"><br>
+      <input type="radio"><br>
+      <input type="checkbox"><br>
+    </form>
+    <!-- label before input's -->
+    <form>
+         <label for="email">email:</label>
+        <input type="text" id="email"><br>
+        <label for="checkbox">checkbox</label>
+        <input type="checkbox" id="checkbox"><br>
+
+        <br><br><br><br>
+<!-- label "for" and input for it needs to have same placeholder in id so they will be bind together -->
+    </form>
+    <form>
+        <input type="radio" name="boy" id="boy" value="1">
+        <label for="boy">attack helicopter</label> <br>
+        <input type="radio" name="boy" id="girl" value="2"> 
+        <label for="girl"> t-54 </label> <br>
+        <input type="radio" name="boy" id="helicopter helicopter" value="3"> 
+        <label for="helicopter helicopter"> tiger 1</label> <br>
+        <input type="submit" value="submit">
+<!-- apparently name attribute needs to be same otherwise it will let you choose multiple of them -->
+    </form>
+    <!-- oh and btw input tags should absolutely include name attribute otherwise they won't send information anywhere -->
+    <form action="results.html" target="_blank" method="get" autocomplete="on">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <!-- autocomplete is that thing that
+     remembers what youve filled the blanks last time and gives you reccomendation -->
+     <!-- method "GET" to send info and method "post" to get info -->
+
+     <!-- "select" tag inside form tag -->
+     <form action="">
+        <label for="yourmom">Choose a mom:</label>
+        <select id="yourmom" name="cars">
+          <option value="volvo">fatter than the "whale"</option>
+          <option value="saab"> so fat that she got stuck in www</option>
+          <option value="fiat">Fiatty</option>
+          <option value="audi"> mazda eyebrows</option>
+        </select>
+        <input type="submit">
+      </form>
+      <!-- select is drop down list and options are options from that list duh -->
+      <!-- the textarea tag -->
+      <form action="">
+        <textarea name="area" id="area" cols="30" rows="10"> your mom was proposed to play in the "whale" but she declined because she would have to go through a dramatic weight loss transformation</textarea>
+    </form>
+    <!-- now for the button -->
+    <button type="button" onclick="alert('Hello negros from zimbabwe')">Click Me!</button>
+    <!-- im just too tired to explain just figure it out yourself -->
+    <form action="">
+        <fieldset>
+          <legend>the form:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+      <!-- again figure it out yourself  -->
+      <form action="/action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <input type="submit">
+      </form>
+      <!-- ig password  -->
+      <form>
+    <input type="password" name="pws" id="pws">
+     <hr>
+    <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+  <button type="submit">okk</button>
+    <hr>
+    </form>
+    <!-- idk calendar ig  -->
+<form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+</form>
+<form action="/action_p">
+    <label for="birthdaytime">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    <input type="submit" value="Submit">
+  </form>
+  
+  <!-- idk bro idk images as buttons fr -->
+  <form action="/ap">
+    <label for="fname">First name: </label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name: </label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="image" src="329130685_1489236274896966_4243417083033506014_nn.jpg" alt="Submit" width="48" height="48">
+  </form>
+<!-- file importer bruh  -->
+<form action=>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <!-- other attributes are "placeholder" "required" -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

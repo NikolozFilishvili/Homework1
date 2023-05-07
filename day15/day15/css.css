@@ -1,0 +1,13 @@
+ol{
+    margin: 0;
+    padding: 0;
+   
+}
+/* nice very nice now ol li and ul li are on same y axis */
+.class{
+    margin: 0px 10px;
+    padding: 10px;
+}
+.class p{
+    margin: 2px;
+}

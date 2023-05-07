@@ -1,0 +1,27 @@
+/* basically background playground */
+.div{
+    background-color: rgb(2, 255, 255);
+    background-image: url("https://images.unsplash.com/photo-1563660818-a0fa77acc503?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-size: contain;
+    height: 200px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.div2{
+    background-color: blueviolet;
+    background-image: url('https://images.unsplash.com/photo-1563660818-a0fa77acc503?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    background-repeat: no-repeat;
+    background-position: 600px 20px;
+    height: 500px;
+    background-size: auto;
+    margin: 10px;
+    border: 2px inset red;
+}
+.div2 p{
+    text-align: center;
+}
+h1 span{
+    color: green;
+}
+/* end of it */

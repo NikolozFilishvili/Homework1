@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(175, 46, 46);
+    background-color: rgba(204, 236, 129, 0.253);
 }
 .ok{
     font-family: Arial;
@@ -34,9 +34,14 @@ a{
     letter-spacing: 5px;
     text-align: center;
     text-shadow: 4px 5px 3px green;
+    border: 100px;
+    border-color: aquamarine;
 }
 img{
     align-content: center;
+    outline: 10px;
+    outline-color: azure;
+    
 }
 .id{
     text-align: right;
@@ -54,4 +59,5 @@ hr{
 
 line-height: 3;
 text-shadow: 3px 2px 2px greenyellow;
+font-family: impact;
 }

@@ -1,0 +1,26 @@
+li{
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-image: url('329130685_1489236274896966_4243417083033506014_nn.jpg') ;
+    line-height: 100px;
+    text-shadow: 2px 2px 1px greenyellow;
+    font-style: oblique;
+    text-decoration:double;
+    letter-spacing: 2px;
+    
+}
+h1{
+    text-align: center;
+    
+}
+/* omg inside ambassing */
+
+body{
+    background-color: rgba(13, 231, 148, 0.767);
+    transition: 1.5s ease-in-out;
+}
+li:hover{
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+    
+}

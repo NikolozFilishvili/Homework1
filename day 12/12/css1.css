@@ -1,0 +1,75 @@
+h1{
+    
+
+    
+}
+.h1{
+    border: 15px solid black;
+    text-align: center;
+    padding-top: 100 px;
+    margin: 100px;
+
+}
+.div1, #okkk{
+
+    border: 5px solid blue;
+    padding: auto;
+    margin: 30px;
+
+}.ok, #okkk{
+    margin-left: 50%;
+    margin-top: 5%;
+    margin-right: 50%;
+    margin-bottom: 5%;
+}
+
+.div2 p{
+
+    border: 5px solid black;
+    width:50%;
+    height:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: auto;
+    
+
+}
+.p2{
+    padding: 0px 25% 0px 25%;
+    
+}
+.img1{
+    margin: 0 0 0 25%;
+    width: 50%;
+    border: 5px inset green;
+}
+.div3{
+border: dashed lightgreen;
+width: 50%;
+margin-left: 25%;
+}
+.div3 p{
+    text-align: center;
+    color: aqua;
+    text-shadow: 2px 2px 1px rgb(111, 143, 125);
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+hr{
+    width: 50%;
+    height: 2px;
+    border: 1px solid green;
+    padding: 0;
+}
+/* box sizing incident of 1999 */
+.div4{
+border: 2px solid black;
+width: 100px;
+padding: 12px;
+box-sizing: border-box;
+
+}
+.div4 p{
+
+    text-align: center;
+}
