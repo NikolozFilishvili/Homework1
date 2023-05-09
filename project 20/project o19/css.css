@@ -39,6 +39,7 @@ li{
     padding: 5px;
     transition: 1s;
     
+    
 }
 li:hover{
     scale: 1.1;

@@ -1,10 +1,89 @@
-body{
+/* ფიფქი არის ყველაფრის ტაგი box-sizing border box იმისთვის რომ margin და padding არ გადმოიღვაროს და ზომა იგივე დარჩეს */
+*{
     box-sizing: border-box;
-    margin: 2px;
+    margin: 0px;
     margin-top: 0px;
+    padding: 0;
+
 }
+body{
+    background-color: #228B22;
+    background-image: url('327195411_578509187126405_8925150253976917425_n\ \(1\).jpg');
+}
+/* მონიშნული მაქვს header რომელიც არის სემანტიკური დივ ელემენტი იმისთვის რომ გავსტილო ის ადგილი სადაც ჩემი list hyperlinkები განთავსდება 100vw= viewwidth  დანარჩენი განსაკუთრებული არაფერი image ჩავსვი და ფერი */
 header{
-    width: 100%;
-    height: 20%;
-    background-color: red;
+    width: 100vw;
+    height: 100px ;
+    background-color: #228B22;
+    background-image: url('329130685_1489236274896966_4243417083033506014_nn.jpg');
 }
+/* ამას დიდად მნიშვნელობა არ აქვს იმიტომ რომ შეგვიძლია nav htmlიდან ამოვაგდოთ და არაფერი შეიცვლება უბრალოდ რადგან სემანტიკური თაგია და რადგან "navbar" ვაკეთებ იყოს უბრალოდ და არაფერში ხელი რომ არ შემიშალოს ვაძლევ headerის ზომას */
+nav{
+    height: 100%;
+    width: 100%;
+}
+/* display:inline block გადააქცევს ჩემს ბლოკურ ელემენტებს ინლაინად რომ ერთმანეთის გვერდი გვერდ განთავსდნენ,
+list-style-type:none ბურთებს აქრობს და Transition 1s გავწერე იმისთვის ფორმატი ტექსტთან ერთად ნელა გაიზარდოს (ეს ტექსტს არ ზრდის ან არც ეხება ეს არის იმ ტექსტის ფორმატი, მართკუთხედი რომელშიც მოთავსებულია) */
+li{
+    display: inline-block;
+    padding: 2px 10px;
+    background-color: #412e2e;
+    list-style-type: none;
+    margin: 30px;
+    padding: 5px;
+    padding-bottom: 10px;
+    width: 110px;
+    height: 25px;
+    text-align: center;
+    transition: 1s; 
+    border-radius: 12px;
+    
+    
+
+}
+/* ტექსტის დეკორაცია არაფერზე რომ ლინკს მის ქვეშ ხაზი არ გაესვას და აი აქ transition უკვე ტექსტზე აგებს პასუხს */
+a{
+    text-decoration: none;
+    transition: 1s;
+    color: aliceblue;
+}
+/* a: hover სელექტორი არის სელექტორი რომელიც სტილავს ჰიპერლინკს როცა მასზე ჩვენ მაუსს გადავატარებთ
+აქ რაც წერია მარტო მაშინ მოიყვანება მოქმედებაში როცა მოუსს მივიყვანთ ჰიპერლინკთან
+text-shadow არის ტექსტის ჩრდილი :დ */
+a:hover{
+    color: greenyellow;
+    font-size: 17px;
+    text-shadow: 1px 2px 2px goldenrod;
+    letter-spacing: 0px;
+}
+/* ეს იმისთვის რომ ოთხივე li შუა ნაწილში მოექცეს */
+ul{
+    text-align: center;
+    
+}
+/* აი ეს ის ფორმატია რომელშიც ტექსტია მოქცეული ანყ scale: 1.5; ნიშნავს რომ ამდენჯერ გაიზარდოს როცა 
+მაუსს მასთან მივიტანთ */
+li:hover{
+    scale: 1.5;
+    outline: 1px dotted greenyellow;
+    
+}
+/*  ეს არის search barის გამსტილავი. 
+display: inline რომ ზედმეტი space არ დაიკავოს  */
+form{
+    margin: 0px 0px;
+    padding: 0;
+display: inline;
+color: rgb(11, 240, 68);
+
+}
+/* ეს არის search ღილაკის გასტილვა */
+.bassing{
+    width: 1%;
+    height: 13%;
+    margin-top: 0;
+    
+}
+
+
+
