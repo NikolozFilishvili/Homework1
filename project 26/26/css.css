@@ -1,0 +1,30 @@
+.yourmom{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    margin: 10px 0 0 0;
+}
+.div1{
+     background-color: rgb(57, 167, 167);
+     border:1px ridge green;;
+}
+
+.div2{ 
+    background-color: brown;
+    border: 1px ridge green;;
+}
+/* grid template columsში იმდენი pxები რამდენი divიც გვაქვს */
+.yourmom2{
+    display: grid;
+    grid-template-columns: 100px 100px 100px; 
+    margin: 10px 0 0 0;
+}
+/* fr means free space everyone here has 1fr meaning they will be divided equally */
+/* column gap is a space between these colums same with row gao*/
+.yourmom22{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0 0 0;
+    border: 1px ridge green;
+    column-gap: 5px;
+    row-gap: 5px;
+}

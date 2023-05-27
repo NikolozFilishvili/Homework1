@@ -9,6 +9,10 @@
 body{
     background-color: #228B22;
     background-image: url('327195411_578509187126405_8925150253976917425_n\ \(1\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 /* მონიშნული მაქვს header რომელიც არის სემანტიკური დივ ელემენტი იმისთვის რომ გავსტილო ის ადგილი სადაც ჩემი list hyperlinkები განთავსდება 100vw= viewwidth  დანარჩენი განსაკუთრებული არაფერი image ჩავსვი და ფერი */
 header{
@@ -65,15 +69,15 @@ ul{
 მაუსს მასთან მივიტანთ */
 li:hover{
     scale: 1.5;
-    outline: 1px dotted greenyellow;
+    outline: 1px ridge greenyellow;
     
 }
 /*  ეს არის search barის გამსტილავი. 
 display: inline რომ ზედმეტი space არ დაიკავოს  */
 form{
     margin: 0px 0px;
-    padding: 0;
-display: inline;
+    padding: 0px;
+display: inline-block;
 color: rgb(11, 240, 68);
 
 }
@@ -83,6 +87,128 @@ color: rgb(11, 240, 68);
     height: 13%;
     margin-top: 0;
     
+}
+/* table.exe.aruda  */
+table{
+    color: beige;
+    border-collapse: collapse;
+    width: 500px;
+    height: 400px;
+    border: 1px ridge green;
+    border-radius: 0%;
+    
+    
+   
+
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+td:nth-child(4){
+    padding: 0px;
+    height: px;
+    width: 65px;
+}
+td:nth-child(5){
+    width: 80px;
+}
+@keyframes colorchange{
+    0%{background-color: rgba(80, 190, 108, 1);}
+    99%{background-color: #228B22;}
+    100%{background-color: rgba(80, 190, 108, 1);}
+}
+td,th{
+    animation: colorchange 8s infinite ease;
+
+}
+td,th{
+    text-align: center;
+    opacity: 0.8;
+    background-color: rgb(80, 190, 108);
+}
+h1{
+    color: antiquewhite;
+    text-align: center;
+    text-shadow: 1px 2px 3px gray;
+    padding: 20px 0px;
+}
+
+
+
+td:hover, th:hover{
+    font-weight: bold;
+    color: white;
+    background-color: rgba(80, 190, 108, 1);
+    opacity: 1;
+    
+}
+.tyesho:hover{
+background-image: url('https://media.discordapp.net/attachments/1076577847839305829/1099405974613262432/image.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: rgba(255, 255, 255, 0);
+transition: 1s;
+}
+.rati:hover{
+background-image: url('https://media.discordapp.net/attachments/1076577847839305829/1091737764145414175/wwqe.PNG?width=850&height=480');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: rgba(255, 255, 255, 0);
+transition: 1s;
+}
+.arud:hover{
+    background-image: url('https://media.discordapp.net/attachments/1085615029891649627/1106988755493064894/image.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: rgba(255, 255, 255, 0);
+transition: 1s;
+}
+.mate:hover{
+    background-image: url('https://media.discordapp.net/attachments/852236526704001034/1107280145418563675/image.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top, center;
+color: rgba(255, 255, 255, 0);
+transition: 1s;
+}
+.avsex:hover{
+    background-image: url('https://media.discordapp.net/attachments/1085615029891649627/1106983627100782652/image.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position:  center;
+color: rgba(255, 255, 255, 0);
+transition: 1s;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+}
+.waltuh:hover{
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Walter_White_S5B.png/220px-Walter_White_S5B.png');
+    background-size: cover;
+background-repeat: no-repeat;
+background-position:  center;
+color: rgba(255, 255, 255, 0);
+transition: 1s;
+}
+th{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tricat:hover{
+    background-image:
+     url('https://coub-attachments.akamaized.net/coub_storage/coub/simple/cw_timeline_pic/4fbb7c5a84b/3f2f3921c29b553fa458f/ios_large_1473574040_image.jpg');
+     background-size: cover;
+background-repeat: no-repeat;
+background-position: top, center;
+color: rgba(255, 255, 255, 0);
+transition: 1s;
 }
 
 

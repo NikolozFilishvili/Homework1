@@ -1,0 +1,90 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    background-color: rosybrown;
+    margin: 10px 20px;
+    padding: 10px;
+    color: burlywood;
+    width: 50px;
+}
+/* აქ შეგიძლია ჩაწერო (even) ან (odd)იც */
+/* :nth- child() არის რიგით რომელი td გინდა გასტილო*/
+td:nth-child(2){
+    color: black;
+    background-color: antiquewhite;
+}
+/* input [type=''] არის კონკრეტული ტიპის ინპუტის გასასტილვად */
+input[type='text']{
+    color: green;
+}
+input[type='email'] {
+    background-color: red;
+}
+input[ type='button'] {
+    font-size: larger;
+}
+input[ type='tel'] {
+    font-weight: bold;
+}
+li {
+    display: inline;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 31%;
+    color: white;
+    background-color: green;
+    transition: 1s;
+  }
+  a:hover {
+    background: rgb(119, 64, 64);
+    border-radius: 50%;
+    scale: 0.1;
+  } 
+  header {
+    background-color: #77adda;
+    text-align: center;
+    padding: 20px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.content {
+    background-color: #2ca152;
+    color: white;
+    padding: 20px;
+    height: 200px;
+    flex: 4;
+}
+.side {
+    background-color: #e6e6a5;
+    padding: 20px;
+    flex: 2;
+}
+main {
+    display: flex;
+}
+/* position relative */
+article {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+}
+/* position relative გვაძლევს საშუალებას ჩვენი ითემი ვამოძრაოთ top,bottom,right,left იმდენი ფიქსელით რამდენიც გვინდა და პადდინგს სცდება ანუ შესაძლოა სხვა ითემი დაფაროს ასე გადაადგილებულმა აითემმა */
+.special {
+    position: relative;
+    bottom:0px;
+    right: 15px;
+    background-color: orange;
+}
