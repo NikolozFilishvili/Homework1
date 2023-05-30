@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    height: 57px;
+    justify-content: space-between;
+    border-bottom: 1px ridge rgb(180, 177, 177);
+    background-color: rgb(255, 253, 252);
+}
+.left{
+    background-color: rgba(84, 90, 75, 0);
+    display: flex;
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    align-items: center;
+}
+.right{
+    display: flex;
+    background-color: rgba(0, 255, 255, 0);
+    width: 200px;
+    max-width: 400px;
+    min-width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 8px;
+    margin-left: 35px;
+}
+.middle{
+    display: flex;
+    background-color: rgba(137, 43, 226, 0);
+    flex:1;
+    margin-left: 70px;
+    margin-right: 33px;
+    align-items: center;
+}
+.hamburg{
+    width: 25px;
+    height:25px;
+    align-items:flex-start;
+    justify-content: center;
+    margin: 0 10px;
+    margin-right: 20px;
+}
+.Yt{
+    width: 100px;
+    height: 50px;
+}
+
+.voicesrc {
+    width: 40px; /* Adjusted width */
+    height: 25px; /* Adjusted height */
+    padding: 10px 0px;
+    flex: 0.35;
+    background-color: rgba(197, 193, 193, 0);
+    background-color: rgba(223, 210, 210, 0);
+    margin-left: 5px;
+    border-radius: 50%;
+    font-size: 16px;
+    padding-right: 5px;
+  }
+input[type=search]{
+    flex: 3.5;
+    height: 69%;
+    border: 1px ridge rgb(184, 182, 182);
+    font-size: 20px;
+    border-radius: 2px;
+}
+input[type=search]::placeholder{
+    padding-left: 10px;
+    font-family: 'roboto';
+    font-size: 20px;
+    color: rgb(180, 171, 171);
+}
+.border{
+    display: flex;
+    flex: 0.5;
+    height: 65% ;
+    width: 25px;
+    height:37px;
+    background-color: rgb(247, 247, 247);
+    ; border: 1px ridge rgb(199, 178, 178);
+    border-radius: 0px;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    border-radius: 2px;
+}
+.src{
+    width: 45%;
+    height: 100%;
+    
+}
+input[type=search]:focus{
+    border: 1px ridge blue;
+    outline: none;
+    box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.459);
+}
+.button-1{
+    display: flex;
+    width: 101px;
+    height: 39px;
+    padding: 0;
+    margin-left: -1px;
+    align-items: center;
+    justify-content: center;
+    border: 1px ridge rgb(207, 200, 200);
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    
+}
+.button-2{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.upload{
+    height: 24px;
+}
+.apps{
+    height: 24px;
+}
+.notifs{
+    height: 24px;
+}
+.bondrewd{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
