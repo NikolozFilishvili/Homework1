@@ -69,22 +69,39 @@ ul{
 li:hover{
     scale: 1.5;
     outline: 1px ridge greenyellow;
+    transform: rotate(360deg);
     
 }
 /*  ეს არის search barის გამსტილავი. 
 display: inline რომ ზედმეტი space არ დაიკავოს  */
-form{
+.form{
     margin: 0px 0px;
     padding: 0px;
 display: inline-block;
 color: rgb(11, 240, 68);
-
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex{
+    display: flex;
+    
+}
+form{
+    display: inline-block;
+}
+.search {
+    margin: 0;
+    display: inline-block;
+    border: 1px ridge greenyellow;
 }
 /* ეს არის search ღილაკის გასტილვა */
 .bassing{
-    width: 1%;
-    height: 13%;
-    margin-top: 0;
+    width: 20px;
+    height: 17px;
+    margin: 0;
+    margin-top: 3px;
+    background-color: #228b2200;
+    outline: 1px ridge greenyellow;
+    margin-left: -1px;
     
 }
 /* table.exe.aruda  */

@@ -46,8 +46,11 @@ ol.Goalist{
     font-size: larger;
     margin-top: 10px;
     border-top: 1px ridge rgba(172, 255, 47, 0);
-    padding-top: 10px;
+    padding: 10px 5px;
     transform: translate(35px);
+    display: inline-block;
+    outline: 1px black ridge;
+    border-radius: 50%;
 }
 .lists:hover::marker{
     color: red;
