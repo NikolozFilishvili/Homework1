@@ -1,0 +1,54 @@
+.Goalist, .Goalist li{
+ all: initial;    
+ box-sizing: unset;
+}
+.GoaList, .GoaList li {
+  /* Reset individual CSS properties */
+  box-sizing: unset;
+  animation: none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: initial;
+  /* ... and so on for other properties */
+  /* Reset shorthand CSS properties */
+  box-sizing: unset;
+  width: 100px;
+  display: block;
+  color: greenyellow;
+  list-style-type: circle;
+  display: list-item;
+  height: 23px;
+  padding-right: 1px;
+  transition: 2s ease-in;
+  
+}
+ol.Goalist{
+    list-style-image: url('329130685_1489236274896966_4243417083033506014_nn.jpg');
+    list-style-position: inside;
+    display: list-item;
+}
+.Goalist li{
+    list-style-image: url('329130685_1489236274896966_4243417083033506014_nn.jpg');
+    display: list-item;
+    box-sizing: unset;
+}
+.Goalist li:hover{
+    transform: translate(50px);
+    border: 1px ridge red;
+}
+.lists:hover{
+    outline: 1px ridge red;
+    transform: translate(50px);
+}
+.p{
+    text-transform: capitalize;
+    font-size: larger;
+    margin-top: 10px;
+    border-top: 1px ridge rgba(172, 255, 47, 0);
+    padding-top: 10px;
+    transform: translate(35px);
+}
+.lists:hover::marker{
+    color: red;
+}

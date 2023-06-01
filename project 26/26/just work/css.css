@@ -43,10 +43,12 @@ header{
     justify-content: center;
     margin: 0 10px;
     margin-right: 20px;
+    cursor: pointer;
 }
 .Yt{
     width: 100px;
     height: 50px;
+    cursor: pointer;
 }
 
 .voicesrc {
@@ -124,15 +126,19 @@ input[type=search]:focus{
 }
 .upload{
     height: 24px;
+    cursor: pointer;
 }
 .apps{
     height: 24px;
+    cursor: pointer;
 }
 .notifs{
     height: 24px;
+    cursor: pointer;
 }
 .bondrewd{
     height: 35px;
     width: 35px;
     border-radius: 50%;
+    cursor: pointer;
 }
