@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height:auto;
+    width: 100%;
+}
+header {
+    text-align: center;
+    background-color: gray
+    ;
+    height:50px ;
+    margin: 0px 0px 30px 0;
+}
+main{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 30px;
+    
+    
+}
+
+.video1{
+    display: inline-block;
+    width: 30%;
+    height: 280px;
+    margin-left: 60px;
+}
+.thumbnail-1{
+ width: 300px;
+}
+.video1-image1{
+    width: 40px;
+    display: inline-block;
+    
+    margin-top: 5px;
+}
+.lilpic{
+    width: 40px;
+    border-radius: 20px;
+}
+
+.video1-p1{
+    display: inline-block;
+    width: 250px;
+    font-family: sans-serif;
+    margin-left: 9px ;
+
+}
+.entirity{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+}
+
+    
