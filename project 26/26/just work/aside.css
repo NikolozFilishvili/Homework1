@@ -1,0 +1,22 @@
+.aside-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 90px;
+    flex-direction: column;
+}
+.aside-img img{
+    background-color: rgba(211, 211, 211, 0);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.aside-img div{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 10px;
+}
+.aside-img:hover{
+    background-color: lightgray;
+}
