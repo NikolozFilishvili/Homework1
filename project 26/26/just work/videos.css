@@ -1,17 +1,21 @@
 main{
+    width: 986px;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+
+    
     
     
 }
 
 .video1{
-    display: inline-block;
-    width: 30%;
+    display: block;
+    width: 310px;
     height: 280px;
-    margin-left: 60px;
-    margin-top: 20px;
+    margin-left: 5px;
+    
+    
 }
 .thumbnail-1{
  width: 300px;
@@ -37,4 +41,31 @@ main{
 .entirity{
         display: grid;
         grid-template-columns: 50px 1fr;
+}
+aside{
+    background-color: rgb(255, 253, 252);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 56px;
+    z-index: 2;
+    border-right: 1px ridge rgb(212, 203, 203)
+}
+.relative{
+    position: relative;
+    height: 170px;
+}
+.absolute{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    background-color: black;
+    opacity: 0.95;
+    color: white;
+    font-weight: 530;
+    padding: 4px 2px;
+    border-radius: 10%;
+    font-size: 13px;
+    color: white;
+    font-family: Arial;
 }
