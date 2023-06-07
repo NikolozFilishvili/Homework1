@@ -13,6 +13,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    overflow-x: hidden;
 }
 /* მონიშნული მაქვს header რომელიც არის სემანტიკური დივ ელემენტი იმისთვის რომ გავსტილო ის ადგილი სადაც ჩემი list hyperlinkები განთავსდება 100vw= viewwidth  დანარჩენი განსაკუთრებული არაფერი image ჩავსვი და ფერი */
 header{
