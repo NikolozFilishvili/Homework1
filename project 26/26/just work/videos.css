@@ -1,9 +1,7 @@
 
 main{
-    width: 986px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 5px;
     margin: 0;
     padding-left: 80px;
     
@@ -50,6 +48,7 @@ main{
 }
 aside{
     background-color: rgb(255, 253, 252);
+    display: grid;
     position: fixed;
     left: 0;
     bottom: 0;
