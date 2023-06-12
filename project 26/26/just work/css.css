@@ -3,9 +3,12 @@
 }
 body{
     padding-top: 70px;
-    padding-left: 80px;
     overflow-x: hidden;
     background-color: rgba(211, 211, 211, 0.233);
+    padding-right: 0px;
+    
+    
+    
 }
 header{
     display: flex;

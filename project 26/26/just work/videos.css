@@ -1,12 +1,18 @@
+
 main{
     width: 986px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 5px;
+    margin: 0;
+    padding-left: 80px;
+    
+}
 
-    
-    
-    
+@media (max-width:1115px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;  
+    }
 }
 
 .video1{
