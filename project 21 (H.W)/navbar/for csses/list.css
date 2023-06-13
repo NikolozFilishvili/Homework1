@@ -40,6 +40,7 @@ ol.Goalist{
 .lists:hover{
     outline: 1px ridge red;
     transform: translate(50px);
+    
 }
 .p{
     text-transform: capitalize;

@@ -1,8 +1,4 @@
-h1{
-    
 
-    
-}
 .h1{
     border: 15px solid black;
     text-align: center;
@@ -39,9 +35,12 @@ h1{
     
 }
 .img1{
-    margin: 0 0 0 25%;
+    
     width: 50%;
     border: 5px inset green;
+}
+a{
+    margin: 0 0 0 25%;
 }
 .div3{
 border: dashed lightgreen;
@@ -63,10 +62,16 @@ hr{
 }
 /* box sizing incident of 1999 */
 .div4{
+    position: fixed;   
 border: 2px solid black;
 width: 100px;
 padding: 12px;
 box-sizing: border-box;
+display: block;
+left: 8px;
+bottom: 0;
+
+
 
 }
 .div4 p{

@@ -63,6 +63,11 @@ a:hover{
 /* ეს იმისთვის რომ ოთხივე li შუა ნაწილში მოექცეს */
 ul{
     text-align: center;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
     
 }
 /* აი ეს ის ფორმატია რომელშიც ტექსტია მოქცეული ანყ scale: 1.5; ნიშნავს რომ ამდენჯერ გაიზარდოს როცა 
@@ -71,6 +76,7 @@ li:hover{
     scale: 1.5;
     outline: 1px ridge greenyellow;
     transform: rotate(360deg);
+    z-index: 3;
     
 }
 /*  ეს არის search barის გამსტილავი. 
@@ -84,6 +90,8 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .flex{
     display: flex;
+    z-index: 2;
+    position: relative;
     
 }
 form{
@@ -233,6 +241,10 @@ h1{
 }
 th{
     letter-spacing: 1px;
+}
+.nolcxra{
+color: #228b2200;
+height: 50px;
 }
 
 

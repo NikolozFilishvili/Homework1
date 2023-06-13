@@ -3,7 +3,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
-    padding-left: 80px;
+    padding: 20px;
+    
     
 }
 
@@ -15,14 +16,16 @@ main{
 
 .video1{
     display: block;
-    width: 310px;
     height: 280px;
     margin-left: 5px;
+    box-sizing: content-box;
     
     
 }
 .thumbnail-1{
  width: 300px;
+ display: block;
+ box-sizing: border-box;
 }
 .video1-image1{
     width: 40px;
