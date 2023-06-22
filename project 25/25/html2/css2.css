@@ -1,0 +1,51 @@
+.grid-2{
+    height: 100vh;
+    margin-top: 30px;
+    display: grid; grid-gap:1px;
+    grid-template: repeat(3, 100px) / repeat(12, 1fr);
+    grid-template-rows: 140px auto 140px;
+    grid-template-areas: 
+    ". h h h h h h h h h h . "
+    "m a a a a a a a a a a a "
+    ". f f f f f f f f f f ."
+    
+    ;
+}
+.header{
+    background-color: blue;
+   grid-area: h;
+    text-align: center;
+}
+.menu{
+    background-color: aquamarine;
+    grid-area: m;
+}
+.aside{
+    background-color: blueviolet;
+    grid-area: a;
+   
+}
+.Footer{
+    background-color: brown;
+    grid-area: f;
+    text-align: center;
+}
+.container{
+    margin-top: 300px;
+    justify-content: center;
+    display: grid;
+    grid-gap: 5px;
+    /* auto-fit აკეთებს ისეთ რაღაცას რომ როცა ფეიჯი დიდდება ან პატარავდება ბლოკებს აკლებს ან უმატებს რომ ცარიელი ადგილი არ დარჩეს, ხოლო minmax რომ ბლოკები მინიმუმ იყოს 100px და თუ ცარიელი ადგილი დარჩა ანუ თუ 100 პხ-ს გაცდა მერე გახდეს 1ფრ და გაიწელოს( მოკლედ უბრალოდ გაადიდე და დააპატარავე window და თვითონ გატესტე ( გატესტვა კოდის დედაა ) */
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
+    /* ყველა rows ექნება 100px შაურმა */
+    grid-auto-rows: 100px;
+}
+.container div{
+    border: 1px solid black
+}
+.container div:nth-child(odd){
+    background-color: blue;
+}
+.container div:nth-child(even){
+    background-color: greenyellow;
+}
