@@ -12,6 +12,7 @@ header {
   background-color: white;
   border-bottom: 1px soid gray;
   position: fixed;
+  top: 0;
 }
 nav {
   display: flex;
