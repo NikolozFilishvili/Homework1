@@ -13,6 +13,7 @@ header {
   border-bottom: 1px soid gray;
   position: fixed;
   top: 0;
+  z-index: 3;
 }
 nav {
   display: flex;
