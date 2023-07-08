@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700;300&display=swap");
 
 * {
   margin: 0;
@@ -10,6 +10,8 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: hsl(185, 75%, 39%);
+  z-index: -3;
+  overflow: hidden;
 }
 main {
   display: flex;
@@ -66,10 +68,12 @@ p {
 .p1 {
   margin-top: -17px;
   margin-bottom: 7px;
+  font-size: 18px;
 }
 .p {
   font-family: "Kumbh Sans";
   color: hsl(229, 23%, 23%);
+  font-weight: 700;
 }
 .gray {
   color: hsl(0, 0%, 59%);
@@ -89,10 +93,32 @@ p {
 span {
   position: relative;
   left: 8px;
+  font-weight: 300;
 }
 .sclast-part p:nth-child(2) {
   transform: translateX(-3px);
 }
 .sclast-part p:nth-child(3) {
   transform: translateX(6px);
+}
+.ball{
+  position: absolute;
+}
+.ball1{
+  top: -500px;
+  left: -400px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom left, #2BBCC4,hsl(185, 75%, 39%) );
+  z-index: -2;
+}
+.ball2{
+  top: 300px;
+  right: -300px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #2BBCC4,hsl(185, 75%, 39%) );
+  z-index: -2;
 }
