@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    font-family: "Karla";
+}
+main{
+    width: 682px;
+    height: 460px;
+    display: grid;
+    border-radius: 5px;
+    grid-template-areas: 
+    "f f"
+    "s t"
+    ;
+    grid-template-rows: 48% 52%;
+    grid-template-columns: 50% 50%;
+    box-shadow: 0px 0px 50px 0.1px rgba(0, 0, 0, 0.233);
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+div:first-child{
+    grid-area: f;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 40px 40px;
+}
+div:nth-child(2){
+    grid-area: s;
+    background-color: #2BB4B1 ;
+    padding: 40px 40px;
+}
+.div3{
+    grid-area: t;
+    background-color: #49BEBD;
+    padding: 40px 40px;
+}
+div:first-child p:first-child{
+    color: #2BB4B1 ;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+div:first-child p:nth-child(2){
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+div:first-child p:last-child{
+    color: hsl(218, 22%, 67%);
+    line-height: 30px;
+    font-weight: 400;
+}
+div:nth-child(2) p:first-child{
+    color:white;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+ h1{
+    color: white;
+    margin-bottom: 10px;
+}
+ h1 span{
+    color: hsla(192, 79%, 78%, 0.856) ;
+    font-size:medium;
+    margin:0 0 0 15px;
+    position: relative;
+    bottom: 5px;
+    font-weight: 400;
+}
+div:nth-child(2) p:last-child{
+    color:white;
+    font-size:medium;
+}
+div:nth-child(2) div{
+    background-color: hsl(71, 73%, 54%);
+    padding: 12px 100px;
+    border-radius: 5.0px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 0px 30px 0.01px rgba(0, 0, 0, 0.171);
+    transition: 0.5s;
+}
+div:nth-child(2) div:hover{
+    transform: scale(1.1);
+}
+.div3 p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+li{
+    list-style-type: none;
+     color: hsl(192, 88%, 83%);
+}
+@media (max-width: 650px){
+    body{
+        overflow-y: scroll;
+    }
+    main{
+        display: grid;
+        width: 70%;
+        height: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "f"
+        "s"
+        "t";
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  outline: 0;
+  font-size: 15px;
+  font-family: "League Spartan";
+  
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+:root {
+  --color: hsl(300, 43%, 22%);
+  --block-ground-color:  rgba(164, 127, 199, 0.13);
+}
+section {
+  color: var(--color);
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 500px;
+  position: relative;
+  top: 100px;
+}
+section p:first-child {
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+section p:last-child {
+  font-weight: 400;
+  line-height: 20px;
+}
+main {
+  width: 100%;
+  height: 355px;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+}
+aside img {
+  height: 15px;
+  width: 15px;
+
+}
+aside {
+  height: 250px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  justify-content: space-evenly;
+}
+aside div{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--block-ground-color);
+    border-radius: 5px;
+    align-items: center;
+    height: 50px;
+    padding: 0px 20px 0px 15px;
+    margin: -25px 0px;
+    color: var(--color);
+    font-weight: 700;
+    width: 400px;
+    
+}
+aside div img{
+    margin: 0px 5px;
+}
+.block2{
+    transform: translateX(30px);
+}
+.block3{
+    transform: translateX(60px);
+}
+aside p{
+    margin-left: 20px;
+}
+footer{
+    display: flex;
+    margin: 0px 150px;
+}
+.big-block1{
+    background-color: var(--color);
+    border-radius: 5px;
+    width: 340px;
+    height: 240px;
+    padding: 40px 35px;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+.big-block1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px ;
+}
+.big-block1 div{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.big-block1 div div{
+    display: flex;
+    flex-direction: column;
+}
+.big-block1 div p:last-child{
+    color: hsl(333, 80%, 67%);
+}
+.desc{
+    position: relative;
+    top: 30px;
+    line-height: 20px;
+}
+.big-block2{
+    transform: translateY(15px);
+    margin: 0px 40px;
+}
+.big-block3{
+    transform: translateY(30px);
+}
+@media (max-width: 750px) {
+    main {
+        width: 70%;
+        height: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            's'
+            'a'
+            'f';
+    }
+    section{
+        grid-area: s;
+    }
+    aside{
+        grid-area: a;
+    }
+    footer{
+        grid-area: f;
+    }
+}
