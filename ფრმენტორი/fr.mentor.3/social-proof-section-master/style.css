@@ -123,24 +123,31 @@ footer{
 .big-block3{
     transform: translateY(30px);
 }
+
 @media (max-width: 750px) {
     main {
         width: 70%;
         height: 90%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-            's'
-            'a'
-            'f';
-    }
-    section{
-        grid-area: s;
+        display: flex;
+        flex-direction: column;
+     
     }
     aside{
-        grid-area: a;
+       transform: translateX(-40px);
     }
     footer{
-        grid-area: f;
+        flex-direction: column;
+    }
+    .block1, .block2, .block3{
+        transform: translateX(0);   
+    }
+    body{
+        overflow-y: scroll;
+    }
+    .big-block2{
+        margin: 0;
+    }
+    .big-block3{
+        margin-bottom: 50px;
     }
 }
