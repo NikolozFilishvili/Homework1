@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h1">olleh</h1>
+    <button onclick="reverse()">click to reverse</button>
+
+    <script>
+      let text = document.getElementById("h1");
+      let btn = document.getElementsByTagName("button")[0]; // Select the first button element
+
+      function reverse() {
+        if (text.innerHTML === "olleh") {
+          text.innerHTML = "hello";
+        } else {
+          text.innerHTML = "olleh";
+        }
+
+        if (btn.innerHTML === "click to reverse") {
+          btn.innerHTML = "on";
+          btn.style.backgroundColor = "green";
+        } else if(btn.innerHTML === "on") {
+          btn.innerHTML = "off"
+          btn.style.backgroundColor = "red"
+        }
+        else{
+          btn.innerHTML = "on";
+          btn.style.backgroundColor = "green";
+        }
+          
+        
+      }
+    </script>
+  </body>
+</html>

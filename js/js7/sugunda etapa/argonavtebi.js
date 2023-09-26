@@ -11,7 +11,7 @@ let person = {
         return this.number1 -= number
     },
     RTZ: function(){
-        console.log(this.number1 -= this.number1)
+        return this.number1 -= this.number1
     }
 }
     
@@ -22,6 +22,7 @@ function happyboy(){
     return happy = console.log(person.substraction(Number(prompt("enter what number do you want to subtract"))))
 }
 function ReturnToZero(){
-    return reset = person.RTZ()
+     reset = person.RTZ()
+     console.log(reset)
 }
 
