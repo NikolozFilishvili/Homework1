@@ -12,7 +12,9 @@ let g6= document.querySelector(".fffff")
 let h1 = document.querySelector(".second h1")
 let img = document.querySelector(".second img")
 let btn = document.querySelector(".second button")
-
+// buttons
+let fw = document.querySelector(".b2")
+let bw = document.querySelector(".b1")
 // console.log(g2)
 
 // I use these to choose what needs to change and in what order <3
@@ -22,6 +24,8 @@ let third = ["Xiaomi Black Shark Lucifer T10 Black", "/piktures 2/6.png"]
 let fourth = ["Logitech BT Keyboard K380 Grey", "/piktures 2/8.png"]
 let fifth = ["Razer Mouse Pad Sphex V3 L Black", "/piktures 2/9.png"]
 let sixth = ["Logitech c505 HD webcam Black", "/piktures 2/12.png"]
+
+
 // event listeners
 g1.addEventListener("click", func1)
 g2.addEventListener("click", func2)
@@ -29,7 +33,10 @@ g3.addEventListener("click", func3)
 g4.addEventListener("click", func4)
 g5.addEventListener("click", func5)
 g6.addEventListener("click", func6)
-
+let myarr = [func1, func2, func3, func4, func5, func6]
+// button event listeners
+fw.addEventListener("click", forward)
+bw.addEventListener("click", backwards)
 function func1(){
      it.style.color = "lightGreen"
      divarr.innerHTML = `<h1> ${first[0]} </h1>
@@ -91,4 +98,21 @@ function func6(){
     <img src="${sixth[1]}">
     <button> ხმის მიცემა </button>`
 }
+let num = -1; 
+function forward() { 
+    num++; // Increment num before calling the function
+    if (num >= myarr.length) {
+        num = 0; // Reset to the first function
+    }
+    myarr[num](); // Call the current function
+    
+}
 
+function backwards() {
+    num--; // Decrement num before calling the function
+    if (num < 0) {
+        num = myarr.length - 1; // Wrap around to the last function
+    }
+    myarr[num](); // Call the current function
+}
+// create a function that makes alert pop out and ask name of the user when he clicks "არჩევა"
