@@ -192,7 +192,7 @@
    transition: 2s;
   }
   .grid div img:hover{
-    transform: scale(1, 1.5);
+    transform: scale(-1, 1.5);
   }
   
   
