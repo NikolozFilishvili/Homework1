@@ -189,10 +189,19 @@
   .grid div img{
    width: 150px;
    height: 150px;
-   transition: 2s;
-  }
-  .grid div img:hover{
-    transform: scale(-1, 1.5);
+   transition: 2.9s;
   }
   
+  .grid div img:hover{
+    transform: scale(-1.5, 1.4) rotateX(360deg);
+  }
+  .ff:hover{
+    image-rendering: pixelated;
+  }
+  .fff:hover{
+    image-rendering: pixelated;
+  }
+  .fffff:hover{
+    image-rendering: pixelated;
+  }
   
