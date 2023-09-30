@@ -1,3 +1,12 @@
+first_item = 0
+second_item = 0
+third_item = 0
+fourth_item = 0
+fifth_item = 0
+sixth_item = 0
+let votes = 0
+let count = 0
+let fuckyou = document.querySelector("header button")
 let divarr = document.querySelector(".second")
 // sarchevi
 let it = document.querySelector("i")
@@ -37,12 +46,23 @@ let myarr = [func1, func2, func3, func4, func5, func6]
 // button event listeners
 fw.addEventListener("click", forward)
 bw.addEventListener("click", backwards)
+//most important button event listener
+
+
 function func1(){
      it.style.color = "lightGreen"
      divarr.innerHTML = `<h1> ${first[0]} </h1>
                         <img src="${first[1]}">
                         <button> ხმის მიცემა </button>`
-                        
+     let btn = document.querySelector(".second button")                   
+     btn.addEventListener("click", function(){
+        let name2 =  prompt("enter your name and last name:");
+        console.log(name2, "voted first item");
+        first_item++
+        votes++
+        btn.style.display = "none"
+        checkVotes()
+     });                   
 }
 function func2(){
     divarr.innerHTML = `<h1> ${second[0]} </h1>
@@ -59,7 +79,14 @@ function func2(){
     btn.addEventListener("mouseout", function() {
         btn.style.backgroundColor = ""; // Set it to an empty string to revert to default
     });
-    
+    btn.addEventListener("click", function(){
+        let name1 =  prompt("enter your name and last name:");
+        console.log(name1, "voted second item");
+        second_item++
+        votes++
+        btn.style.display = "none"
+        checkVotes()
+    });
     it.style.color = "blue"
 
 }
@@ -67,7 +94,18 @@ function func3(){
     it.style.color = "lightGreen"
     divarr.innerHTML = `<h1> ${third[0]} </h1>
                         <img src="${third[1]}">
-                        <button> ხმის მიცემა </button>`
+                        <button> ხმის მიცემა </button>`;
+                        let btn = document.querySelector(".second button")
+                        btn.addEventListener("click", function(){
+                            let name1 =  prompt("enter your name and last name:");
+                            console.log(name1, "voted third item");
+                            third_item++
+                            votes++
+                            btn.style.display = "none"
+                            checkVotes()
+                        });
+
+
 }
 function func4(){
     divarr.innerHTML = `<h1> ${fourth[0]} </h1>
@@ -84,6 +122,14 @@ function func4(){
     btn.addEventListener("mouseout", function() {
          btn.style.backgroundColor = ""; // Set it to an empty string to revert to default
     });   
+    btn.addEventListener("click", function(){
+        let name1 =  prompt("enter your name and last name:");
+        console.log(name1, "voted fourth item");
+        fourth_item++
+        votes++
+        btn.style.display = "none"
+        checkVotes()
+    });
     it.style.color = "#E4CD41"                 
 }
 function func5(){
@@ -91,12 +137,30 @@ function func5(){
     divarr.innerHTML = `<h1> ${fifth[0]} </h1>
     <img src="${fifth[1]}">
     <button> ხმის მიცემა </button>`
+     let btn = document.querySelector(".second button")
+      btn.addEventListener("click", function(){
+        let name1 =  prompt("enter your name and last name:");
+        console.log(name1, "voted fifth item");
+        fifth_item++
+        votes++
+        btn.style.display = "none"
+        checkVotes()
+    });   
 }
 function func6(){
     it.style.color = "lightGreen"
     divarr.innerHTML = `<h1> ${sixth[0]} </h1>
     <img src="${sixth[1]}">
     <button> ხმის მიცემა </button>`
+    let btn = document.querySelector(".second button")
+     btn.addEventListener("click", function(){
+        let name1 =  prompt("enter your name and last name:");
+        console.log(name1, "voted fifth item");
+        sixth_item++
+        votes++
+        btn.style.display = "none"
+        checkVotes()
+    });
 }
 let num = -1; 
 function forward() { 
@@ -116,3 +180,9 @@ function backwards() {
     myarr[num](); // Call the current function
 }
 // create a function that makes alert pop out and ask name of the user when he clicks "არჩევა"
+function checkVotes() {
+    foot = document.querySelector("footer")
+    if (votes >= 5) {
+        foot.innerHTML = `<p> first = ${first_item}, second = ${second_item}, third = ${third_item}, fourth = ${fourth_item}, fifth = ${fifth_item}, sixth = ${sixth_item}`;
+    }
+}

@@ -204,4 +204,11 @@
   .fffff:hover{
     image-rendering: pixelated;
   }
+  footer p{
+    color: white;
+  }
+  footer{
+    height: 100px;
+    width: 100%;
+  }
   
