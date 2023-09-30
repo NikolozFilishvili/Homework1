@@ -57,12 +57,23 @@ function checkVotes() {
     }
 }
 
-// Function to handle the winner selection
-function selectWinner() {
+
+// ... your existing code ...
+
+// Inside the if statement when a winner is selected
+function selectWinner(){
     if (votes >= 15) {
-        console.log(voters[Math.trunc(Math.random() * 15)], "is the Winner");
-    }
-}
+        
+        let foot = document.querySelector("footer");
+        let winner = voters[Math.trunc(Math.random() * 15)];
+        console.log(winner, "is the Winner");
+        // Display the winner in the winner element
+        foot.innerHTML = `<p><span> ${winner}</span> is the Winner<span>!</span> </p>`;
+    
+        // Add the rainbow-text class to start the animation
+        
+        
+}}
 
 function func1() {
     it.style.color = "lightGreen";
@@ -76,6 +87,7 @@ function func1() {
         voters.push(name2);
         first_item++;
         votes++;
+        btn.style.display = "none";
         checkVotes();
         selectWinner();
     });
