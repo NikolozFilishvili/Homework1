@@ -81,23 +81,4 @@ end_fill()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 exitonclick()
